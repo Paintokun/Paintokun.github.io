@@ -1,0 +1,131 @@
+<!-- I know we were told to change texts to customize for ourselves but I currentyl dont know what to write and also
+ I think its best I wait since I dont have much to my name with coding so I can add it as i go 
+ This is just a comment for teachers reading this code and also for myself.-->
+
+ <!-- Also just another comment for the overall of the sylesheet and the HTML, 
+  Im not exactly too sure how I feel about the creativity of my portfolio website,
+  but I prefer it being anime themed, Im not exactly too sure about the colors and styles yet
+  but I will figure that out as I update this website, I kept relatively the same layour
+ as the template, I mean its simple Im just gonna keep building upon it and maybe change or add stuff later
+ -->
+
+ <!-- ALL TEXT IN THIS HTML IS SUBJECT TO CHANGE, AND ALSO ON THE CSS STYLESHEET,
+  THAT CAN ALSO CHANGE CONSIDERING I DONT KNOW IF I LOVE IT OR NOT so keep that in mind
+  .-->
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Sanrick Rojas Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <br>
+        <br>
+
+<!-- Hero video section -->
+<div class="Video_Section" id="Home">
+    <video autoplay muted loop id="Typing_Video">
+        <source src="video/kakashi.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="Video_Text">
+        <h1 class="white-text">Sanrick Rojas Portfolio</h1>
+        <strong>
+            <p class="center">
+                <br>
+                <br> Hello there! My name is Sanrick. Welcome to my portfolio website...
+                <br>
+                <br> Thank you for stopping by and enjoy!
+            </p>
+        </strong>
+    </div>
+</div>
+
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="images/aboutme.png" alt="Replace with your own image and description">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About Me</h1>
+                <p>  <!--Will fill this in as the course goes along-->
+                     Eventually will add some stuff about me, but preferably would like to wait
+                    <br> <!-- The section underneath this Im going to leave so I can see the code later, I think the hyperlink within the text is very cool -->
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br> <!-- I will aslo be leaveing this part here, since I dont want to fill in the text just yet but I also do like the contact msg sending you to the contact section of the website-->
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Paintokun" target="_blank">Paintokun Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/Paintokun" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="images/business.png" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Please enter your name here">
+
+    <label for="email">Email:</label>
+    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+
+    <label for="message">Message:</label>
+    <textarea id="Message" name="Message" placeholder="Please write your message here"></textarea>
+
+    <div class="submit-wrapper">
+        <input type="submit" value="SUBMIT">
+    </div>
+</form>
+
+            </div>
+        </div>
+
+        <!--Footer section, also text in here is subject to change, I dont have everything full laid out-->
+        <footer>
+            <p>
+                <p class="center">&copy Paintokun studios., <a href="" target="_blank">Paintokun</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
