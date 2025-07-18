@@ -216,3 +216,79 @@ footer {
   z-index: 2;
   font-family: 'Fredoka One', cursive;
 }
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: 40px auto 40px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.mySlides {
+  display: none;
+  position: relative;
+}
+
+.mySlides img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text {
+  color: #7E57C2;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  text-align: center;
+  background: #E1BEE7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 8px 16px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: rgba(0, 150, 136, 0.7);
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #00796B;
+}
+
+/* Footer social links styling */
+.footer-social {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.footer-social a {
+  margin: 0 15px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-social a img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-social a:hover {
+  transform: scale(1.2);
+}
