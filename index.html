@@ -1,0 +1,165 @@
+<!-- okay so, this is the updated portfolio website, I reviewd the code and the other website and I wasnt a huge fan of the way it looked it just kinda looked messy and a bit confusing
+ I want mine to just be easy and clean to see with my own theme, I added a slideshow that will have images of my projects but for now it just has images of One Piece characters
+ and I also put social links in  the footer section, I dont have my actual links on there just yet since I wanna see what else we will be updating about this if we do in the future,
+ Also the text on the website talking about myself and stuff still isnt updated since I really dont know wha tto say, Again I also dont really see a point in having a slideshow that links to sections that are 
+ already on my page like if they scroll down once more all that info is in there. 
+  .-->
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Sanrick Rojas Portfolio</title>\
+        <meta name="description" content="Welcome to the portfolio of Sanrick Rojas.">
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <br>
+        <br>
+
+<!-- Hero video section -->
+<div class="Video_Section" id="Home">
+    <video autoplay muted loop id="Typing_Video">
+        <source src="video/kakashi.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="Video_Text">
+        <h1 class="white-text">Sanrick Rojas Portfolio</h1>
+        <strong>
+            <p class="center">
+                <br>
+                <br> Hello there! My name is Sanrick. Welcome to my portfolio website...
+                <br>
+                <br> Thank you for stopping by and enjoy!
+            </p>
+        </strong>
+    </div>
+</div>
+
+    <!-- Slideshow Container, This area will have pictures of projects ive been on or done, for now this will stay with pictures of anime characters, but thats what it will be for in the future since Right now I only have a few-->
+    <div class="slideshow-container">
+
+    <!-- Slide 1 -->
+    <div class="mySlides fade">
+        <img src="images/luffy.jpeg" style="width:100%" alt="Project 1">
+        <div class="text">Future Pirate King</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="mySlides fade">
+        <img src="images/zoro.jpg" style="width:100%" alt="Project 2">
+        <div class="text">Zoro wing to the Future Pirate King</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="mySlides fade">
+        <img src="images/sanji.jpg" style="width:100%" alt="Project 3">
+        <div class="text">Sanji wing to the Future Pirate King</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+    </div>
+
+
+
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="images/aboutme.png" alt="Replace with your own image and description">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About Me</h1>
+                <p>  <!--Will fill this in as the course goes along-->
+                     Eventually will add some stuff about me, but preferably would like to wait
+                    <br> <!-- The section underneath this Im going to leave so I can see the code later, I think the hyperlink within the text is very cool -->
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br> <!-- I will aslo be leaveing this part here, since I dont want to fill in the text just yet but I also do like the contact msg sending you to the contact section of the website-->
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Paintokun" target="_blank">Paintokun Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/Paintokun" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="images/business.png" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Please enter your name here">
+
+    <label for="email">Email:</label>
+    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+
+    <label for="message">Message:</label>
+    <textarea id="Message" name="Message" placeholder="Please write your message here"></textarea>
+
+    <div class="submit-wrapper">
+        <input type="submit" value="SUBMIT">
+    </div>
+</form>
+
+            </div>
+        </div>
+
+        <!--Footer section, also text in here is subject to change, I dont have everything full laid out-->
+        <footer>
+            <p>
+                <p class="center">&copy Paintokun studios., <a href="" target="_blank">Paintokun</a></p>
+                <br>
+            </p>
+            <div class="footer-social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+</div>
+
+        </footer>
+        <script src="portfolio.js"></script>
+    </body>
+</html>

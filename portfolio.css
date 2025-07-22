@@ -1,0 +1,294 @@
+/* Import google font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* Body */
+body {
+  margin: 0;
+  padding-top: -50px; /* added: height of navbar + padding */
+  font-family: 'Fredoka One', cursive;
+  background-color: #FFF9C4;
+  color: #7E57C2;
+}
+
+/* Headings */
+h1 {
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  margin-top: 3%;
+  color: #7E57C2;
+  transition: transform 0.5s;
+}
+h1:hover {
+  transform: scale(1.1);
+}
+
+/* Paragraphs with hover */
+p {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.1rem;
+  padding: 0 20px;
+  transition: transform 0.3s, color 0.3s;
+}
+p:hover {
+  transform: scale(1.05);
+  color: #9C27B0;
+}
+
+/* Links */
+a {
+  color: #7E57C2;
+  text-decoration: none;
+}
+a:hover {
+  color: #4A148C;
+}
+
+/* Navbar */
+.Navbar {
+  background-color: #009688;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1000;
+}
+.Navbar a {
+  color: #FFF;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+.Navbar a:hover,
+.Navbar a.active {
+  background-color: #00796B;
+  color: #FFFDE7;
+  border-radius: 5px;
+}
+
+/* Video Text Overlay */
+.Video_Text {
+  background: rgba(0, 150, 136, 0.7);
+  color: #FFF;
+  padding: 20px;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  animation: moveVideoText 1s ease-out;
+}
+@keyframes moveVideoText {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Remove quote text (only leaves your welcome line) */
+.Video_Text p {
+  font-size: 1.2rem;
+}
+
+/* About / GitHub / Contact Sections */
+.Row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px auto;
+  max-width: 1000px;
+}
+.Column_1, .Column_2 {
+  flex: 1 1 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #E1BEE7;
+  border-radius: 10px;
+}
+.Column_2 {
+  background-color: #D1C4E9;
+}
+
+/* Images */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  filter: grayscale(50%);
+  transition: filter 0.5s, transform 0.5s;
+}
+img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 1rem;
+  color: #4A148C;
+  margin-top: 10px;
+}
+
+input[type="text"], textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  font-family: 'Fredoka One', cursive;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Make the textarea taller */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+.submit-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+input[type=submit] {
+  background-color: #009688;
+  color: #FFF;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+input[type=submit]:hover {
+  background-color: #00796B;
+  transform: scale(1.1);
+}
+
+input[type=submit] {
+  background-color: #009688;
+  color: #FFF;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+input[type=submit]:hover {
+  background-color: #00796B;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background-color: #009688;
+  color: #FFF;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+/* Video Section (not full screen, just fits its div) */
+#Home {
+  position: relative;
+  width: 100%;
+  height: 500px; /* You can adjust this height */
+  overflow: hidden;
+}
+
+#Home video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom; /* This keeps the bottom visible and cuts the top */
+  display: block;
+}
+.Video_Text {
+  position: absolute;
+  bottom: 0; /* Anchors it to the bottom of the section */
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  color: white;
+  text-align: center;
+  z-index: 2;
+  font-family: 'Fredoka One', cursive;
+}
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: 40px auto 40px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.mySlides {
+  display: none;
+  position: relative;
+}
+
+.mySlides img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text {
+  color: #7E57C2;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  text-align: center;
+  background: #E1BEE7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 8px 16px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: rgba(0, 150, 136, 0.7);
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #00796B;
+}
+
+/* Footer social links styling */
+.footer-social {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.footer-social a {
+  margin: 0 15px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-social a img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-social a:hover {
+  transform: scale(1.2);
+}
