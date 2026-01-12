@@ -18,15 +18,15 @@ This project is an MVC web application that simulates a basic car insurance webs
 input such as age, vehicle information, and driving history, then calculates an insurance quote
 based on set business rules.
 
-##CurrentDateandTime
+## CurrentDateandTime
 
 This was a smaller project that just shows the current time on websites, when refreshed the time will always be the same
 
-##TicTacToe
+## TicTacToe
 
 This project implimented the use of Images and Sounds while playing the game triggering when certain conditions were met (Wins, Losses and Spots picked)
 This game had a lot of conditions that needed to be met for certain functions to work properly
 
-##Calculator
+## Calculator
 
 This is a basic calculator that performs standard arithmetic operations.
